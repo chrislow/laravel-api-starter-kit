@@ -12,6 +12,7 @@ class AuthController extends Controller
     /**
      * Handle user registration.
      *
+     * @unauthenticated
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */
@@ -38,6 +39,7 @@ class AuthController extends Controller
     /**
      * Handle user login and return an authentication token.
      *
+     * @unauthenticated
      * @param  \Illuminate\Http\Request  $request
      * @return string
      * @throws \Illuminate\Validation\ValidationException
@@ -66,6 +68,7 @@ class AuthController extends Controller
     /**
      * Get the authenticated user.
      *
+     * @authenticated
      * @param  \Illuminate\Http\Request  $request
      * @return \App\Models\User
      */
@@ -77,6 +80,7 @@ class AuthController extends Controller
     /**
      * Handle user logout.
      *
+     * @authenticated
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */

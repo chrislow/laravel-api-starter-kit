@@ -1,4 +1,16 @@
-# What's different from the original laravel
+# Laravel 12 API Starter Kit
+This is a starter kit for building a RESTful API using Laravel 12 with Sanctum for authentication, PEST for testing, and Scribe for API documentation.
+
+## Features
+- **Laravel 12**: The latest version of Laravel.
+- **Sanctum**: Simple token-based authentication for SPAs (Single Page Applications) and simple APIs.
+- **PEST**: A modern PHP testing framework that makes writing tests enjoyable.
+- **Scribe**: A package for generating API documentation from your Laravel routes and controllers.
+- **Versioned API**: The API routes are versioned to allow for future changes without breaking existing clients.
+- **All Changes documented**: The changes made to the original Laravel application are documented for clarity.
+- **Near zero dependencies**: The starter kit is lightweight and does not include unnecessary packages, making it easy to extend and customize.
+
+## What's different from the original laravel
 
 1. Installed a fresh laravel 12 application by running the `laravel new` (Laravel Installer 5.14.0) command.
 2. Added Sanctum with `php artisan install:api` command. See [Laravel Sanctum Docs](https://laravel.com/docs/12.x/sanctum).
@@ -22,4 +34,5 @@
    $ composer require pestphp/pest --dev --with-all-dependencies
    $ ./vendor/bin/pest --init
    ```
-8. Added the `tests/Feature/Http/Controllers/AuthControllerTest.php` file with tests for the auth routes.
+8. Added the `tests/Feature/Http/Controllers/AuthControllerTest.php` file with tests for the auth routes
+9. Added Scribe with `composer require knuckleswtf/scribe` command, using default settings to generate API documentation.
