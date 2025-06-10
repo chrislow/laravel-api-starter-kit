@@ -8,7 +8,12 @@ This is a starter kit for building a RESTful API using Laravel 12 with Sanctum f
 - **Scribe**: A package for generating API documentation from your Laravel routes and controllers.
 - **Versioned API**: The API routes are versioned to allow for future changes without breaking existing clients.
 - **All Changes documented**: The changes made to the original Laravel application are documented for clarity.
-- **Near zero dependencies**: The starter kit is lightweight and does not include unnecessary packages, making it easy to extend and customize.
+- **Near zero dependencies**: The starter kit is lightweight and does not include unnecessary third-party-packages, making it easy to extend and customize.
+
+## External Packages
+- **Laravel Sanctum**: For API authentication.
+- **PEST**: For testing.
+- **Scribe**: For API documentation.
 
 ## What's different from the original laravel
 
